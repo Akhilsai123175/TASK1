@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
 
 # Load dataset
-df = pd.read_csv("../DATASET/Titanic-Dataset.csv")git --version
+df = pd.read_csv("../DATASET/Titanic-Dataset.csv")
 # Handle missing values
 df['Age'] = df['Age'].fillna(df['Age'].median())
 df['Embarked'] = df['Embarked'].fillna(df['Embarked'].mode()[0])
